@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #6ab0de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.prvi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drugi {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a4b78;
+  margin-bottom: 20px;
+}
+
+.title-signup {
+  display: none;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-field input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #497ba5, #2b5d84);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #2b5d84, #497ba5);
+}
+
+.forgot-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #0a4b78;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-btn:hover {
+  text-decoration: underline;
+}
