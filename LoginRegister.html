@@ -1,37 +1,99 @@
 <!DOCTYPE html>
-<html lang="sl">
 <head>
   <title>Login & Signup</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="prvi">
-    <input type="radio" name="view" id="show-login" checked>
-
     <div class="drugi">
-      <h2 class="title title-login">LOGIN</h2>
-      <h2 class="title title-signup">SIGN UP</h2>
+      <div id="login-form">
+        <h2 class="title">LOGIN</h2>
 
-      <form class="form form-login">
-	  
-        <div class="input-field">
-          <input type="text" placeholder="Username">
-        </div>
+        <form class="form">
+          <div class="input-field">
+            <input type="text" placeholder="Username">
+          </div>
 
-        <div class="input-field">
-          <input type="password" placeholder="Password">
-        </div>
+          <div class="input-field">
+            <input type="password" placeholder="Password">
+          </div>
 
-        <div class="remember">
-          <input type="checkbox" id="remember">
-          <label for="remember">Remember me</label>
-        </div>
+          <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
 
-        <button type="button" class="btn">LOGIN</button>
+          <button type="button" class="btn">LOGIN</button>
 
-       <button class="forgot-btn">Forgot Username / Password?</button>
-      </form>
+          <button type="button" class="forgot-btn">
+            Forgot Username / Password?
+          </button>
+        </form>
+
+        <p class="toggle">
+          Nimaš še računa?
+          <span id="show-signup" class="toggle-link">Ustvari račun</span>
+        </p>
+      </div>
+
+      <div id="signup-form" style="display: none;">
+        <h2 class="title">SIGN UP</h2>
+
+        <form class="form">
+
+          <div class="input-field">
+            <input type="text" placeholder="Username">
+          </div>
+
+          <div class="input-field">
+            <input type="email" placeholder="E-mail">
+          </div>
+
+          <div class="input-field">
+            <select>
+              <option value="" disabled selected>Izberi državo</option>
+              <option>Slovenija</option>
+              <option>Hrvaška</option>
+              <option>Avstrija</option>
+              <option>Nemčija</option>
+              <option>Italija</option>
+              <option>Madžarska</option>
+              <option>Francija</option>
+              <option>Španija</option>
+              <option>Portugalska</option>
+              <option>Združeno kraljestvo</option>
+              <option>ZDA</option>
+              <option>Kanada</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <input type="date">
+          </div>
+
+          <div class="input-field">
+            <input type="tel" placeholder="Telefon" pattern="[0-9+ ]{6,15}">
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Password">
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Confirm Password">
+          </div>
+
+          <button type="button" class="btn">CREATE ACCOUNT</button>
+        </form>
+
+        <p class="toggle">
+          Že imaš račun?
+          <span id="show-login" class="toggle-link">Prijavi se</span>
+        </p>
+      </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

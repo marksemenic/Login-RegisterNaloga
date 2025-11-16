@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #6ab0de;
+  background: rgb(106, 176, 222);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,26 +15,22 @@ body {
 }
 
 .drugi {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.8);
   padding: 30px;
   width: 320px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .title {
   text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #0a4b78;
   margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(10, 75, 120);
+  font-size: 22px;
 }
 
-.title-signup {
-  display: none;
-}
-
-.form-login {
+.form {
   display: flex;
   flex-direction: column;
 }
@@ -48,15 +44,53 @@ body {
 .input-field input {
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.input-field input::placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.input-field select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  outline: none;
+  color: rgb(153, 153, 153);
+}
+
+.input-field input[type="date"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  outline: none;
+  color: rgb(153, 153, 153);
+}
+
+.input-field input:hover,
+.input-field select:hover {
+  border-color: rgb(153, 153, 153);
+}
+
+.input-field input:focus,
+.input-field select:focus {
+  border-color: rgb(10, 75, 120);
+  outline: none;
+  background: rgba(255, 255, 255, 1);
+  color: rgb(68, 68, 68);
 }
 
 .remember {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 5px;
+  margin-bottom: 10px;
   font-size: 13px;
 }
 
@@ -65,28 +99,50 @@ body {
   padding: 12px;
   border: none;
   border-radius: 20px;
-  background: linear-gradient(to right, #497ba5, #2b5d84);
+  background: linear-gradient(to right, rgb(73, 123, 165), rgb(43, 93, 132));
   color: white;
+  cursor: pointer;
   font-size: 15px;
   font-weight: bold;
-  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.2s ease;
 }
 
 .btn:hover {
-  background: linear-gradient(to right, #2b5d84, #497ba5);
+  background: linear-gradient(to right, rgb(43, 93, 132), rgb(73, 123, 165));
 }
 
 .forgot-btn {
-  margin-top: 10px;
+  margin-top: 12px;
   background: none;
   border: none;
-  font-size: 13px;
-  color: #0a4b78;
+  color: rgb(10, 75, 120);
+  font-size: 14px;
   cursor: pointer;
-  width: 100%;
   text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  font-weight: 500;
 }
 
 .forgot-btn:hover {
+  text-decoration: underline;
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: rgb(68, 68, 68);
+}
+
+.toggle-link {
+  color: rgb(10, 75, 120);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.toggle-link:hover {
   text-decoration: underline;
 }
